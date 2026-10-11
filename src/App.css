@@ -1,0 +1,101 @@
+#root {
+  min-height: 100vh;
+}
+
+.login-screen {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.login-form {
+  width: min(100%, 360px);
+}
+
+.app-container {
+  max-width: 1120px;
+}
+
+.status-filter {
+  width: min(100%, 230px);
+}
+
+.request-row {
+  cursor: pointer;
+}
+
+.request-preview {
+  max-width: 330px;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status-open {
+  color: #9a5b00;
+  background: #fff2d6;
+}
+
+.status-answered {
+  color: #155bb5;
+  background: #e6f0ff;
+}
+
+.status-closed {
+  color: #536174;
+  background: #edf0f4;
+}
+
+.state-panel {
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e1e6ed;
+  border-radius: 12px;
+  background: #fff;
+  color: #667386;
+}
+
+.empty-state {
+  flex-direction: column;
+  gap: 8px;
+  padding: 28px;
+  text-align: center;
+}
+
+.empty-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 4px;
+  border-radius: 50%;
+  color: #2166d1;
+  background: #eaf2ff;
+  font-weight: 700;
+}
+
+.request-description {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 575px) {
+  .app-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .request-preview {
+    max-width: 190px;
+  }
+}
